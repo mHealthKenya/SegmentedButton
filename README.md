@@ -1,5 +1,3 @@
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-SegmentedButton-green.svg?style=true)](https://android-arsenal.com/details/1/4445) [![](https://jitpack.io/v/ceryle/segmentedbutton.svg)](https://jitpack.io/#ceryle/segmentedbutton)
-
 # SegmentedButton
 
 ![poster](https://cloud.githubusercontent.com/assets/20969019/19036424/75a0b61c-8978-11e6-873d-e316f77fd740.png)
@@ -8,23 +6,17 @@
 Segmented Button is a IOS-like "Segmented Control" with animation.<br/>
 For more Android-like segmented control, check [Radio Real Button](https://github.com/ceryle/RadioRealButton).
 
-## Preview
-![1](https://cloud.githubusercontent.com/assets/20969019/21565956/9fec9300-cea6-11e6-981f-c5c2a70a2e57.gif)
+##Preview
+![1](https://cloud.githubusercontent.com/assets/20969019/19036452/9abd66e8-8978-11e6-84f3-2942ec2feb6d.gif)
 <br />
-![2](https://cloud.githubusercontent.com/assets/20969019/21565963/bdda9aba-cea6-11e6-91ba-6e6b0230a512.gif)
+![2](https://cloud.githubusercontent.com/assets/20969019/19036451/9abab79a-8978-11e6-8594-8590e95f7b03.gif)
 <br />
-![3](https://cloud.githubusercontent.com/assets/20969019/21565967/c3dd51d2-cea6-11e6-91c4-1d3fa0ee6884.gif)
+![3](https://cloud.githubusercontent.com/assets/20969019/19036454/9ac12026-8978-11e6-9c4c-148996f080b7.gif)
+![4](https://cloud.githubusercontent.com/assets/20969019/19036455/9ac1c6f2-8978-11e6-91df-efcb5cdee110.gif)
 <br />
-![6](https://cloud.githubusercontent.com/assets/20969019/21565976/df8a7fc2-cea6-11e6-8740-debb45d1aff7.gif)
+![5](https://cloud.githubusercontent.com/assets/20969019/19036453/9ac057c2-8978-11e6-9ecb-a72ca25b39cf.gif)
 <br />
-![4](https://cloud.githubusercontent.com/assets/20969019/21565969/ce06efa6-cea6-11e6-8878-6260054bb3be.gif)
-![5](https://cloud.githubusercontent.com/assets/20969019/21565972/d6df69d2-cea6-11e6-8391-27b1d45b945b.gif)
-<br />
-###### You can also apply your custom drawable on button group
-![7](https://cloud.githubusercontent.com/assets/20969019/21565978/ec2fb698-cea6-11e6-8ae9-54326e3ebdf4.gif)
-<br />
-###### It is now possible to drag selector
-![8](https://cloud.githubusercontent.com/assets/20969019/24909871/6b0a8b10-1ece-11e7-8686-df8276f1ae15.gif)
+![6](https://cloud.githubusercontent.com/assets/20969019/19036456/9ac4a7c8-8978-11e6-9a1c-8cf1bb933026.gif)
 
 
 ## Installation
@@ -43,7 +35,7 @@ and:
 
 ```gradle
 dependencies {
-    compile 'com.github.ceryle:SegmentedButton:v2.0.2'
+    compile 'com.github.ceryle:SegmentedButton:v1.0'
 }
 ```
 
@@ -52,53 +44,34 @@ dependencies {
 ### Some Attributes
 
 #### Segmented Button
-| Option Name              | Format  | Description                              |
-| ------------------------ | ------- | ---------------------------------------- |
-| app:sb_imageTint         | `color` | Set tint onto button's image             |
-| app:sb_imageScale        | `float` | Scale button's image                     |
-| app:sb_selectedImageTint | `color` | Set tint onto button's image if selector on it |
-| app:sb_selectedTextColor | `color` | Set color onto button's text if selector on it |
-| app:sb_rippleColor       | `color` | Set ripple color of button               |
+| Option Name      				| Format                 | Description                              |
+| ---------------- 				| ---------------------- | -----------------------------            |
+| app:sb_imageTint         | `color`               |  Set tint onto button's image    |
+| app:sb_imageScale       | `float`               | Scale button's image |
+| app:sb_selectedImageTint 		| `color`		         | Set tint onto button's image if selector on it  |
+| app:sb_selectedTextColor     | `color`               | Set color onto button's text if selector on it      |
+| app:sb_rippleColor        | `color`               | Set ripple color of button  |
 
 #### Segmented Button Group
-| Option Name                     | Format      | Description                              |
-| ------------------------------- | ----------- | ---------------------------------------- |
-| app:sbg_ripple                  | `boolean`   | Set ripple color for every button        |
-| app:sbg_rippleColor             | `color`     | Set ripple color for every button with custom color |
-| app:sbg_selectorImageTint       | `color`     | If selector on it, set tint onto image for every button |
-| app:sbg_selectorTextColor       | `color`     | If selector on it, set text color for every button |
-| app:sbg_selectorColor           | `color`     | Set selector color                       |
-| app:sbg_dividerSize             | `dimension` | Set divider size                         |
-| app:sbg_dividerPadding          | `dimension` | Set divider padding for top and bottom   |
-| app:sbg_dividerColor            | `color`     | Change divider color                     |
-| app:sbg_dividerRadius           | `dimension` | Round divider                            |
-| app:sbg_shadow                  | `boolean`   | Shadow for container layout (api21+)     |
-| app:sbg_shadowElevation         | `dimension` | Shadow for container layout (api21+)     |
-| app:sbg_shadowMargin            | `dimension` | Set margin to make shadow visible (api21+) |
-| app:sbg_position                | `integer`   | Set selected button position             |
-| app:sbg_radius                  | `dimension` | Make layout rounder                      |
-| app:sbg_backgroundColor         | `color`     | Set background color of container (except transparent color) |
-| app:sbg_animateSelectorDuration | `integer`   | Set how long selector travels to selected position |
-| app:sbg_animateSelector         | `integer`   | Set selector animation (ex. bounce animation) |
-| app:sbg_borderSize              | `dimension` | Add border by giving dimension           |
-| app:sbg_borderColor             | `color`     | Change border color (Default: Grey)      |
-
-### Animations Available
-
-- fastOutSlowIn
-- bounce
-- linear
-- decelerate
-- cycle
-- anticipate
-- accelerateDecelerate
-- accelerate
-- anticipateOvershoot
-- fastOutLinearIn
-- linearOutSlowIn
-- overshoot
-
-These animations can be set using the attribute noted above like so: `app:sbg_animateSelector="bounce"`. Also make sure to play with the `app:sbg_animateSelectorDuration` attribute to get the animation to look exactly how you want it.
+| Option Name      				| Format                 | Description                              |
+| ---------------- 				| ---------------------- | -----------------------------            |
+| app:sbg_ripple         | `boolean`               |  Set ripple color for every button    |
+| app:sbg_rippleColor         | `color`               |  Set ripple color for every button with custom color    |
+| app:sbg_selectorImageTint       | `color`               | If selector on it, set tint onto image for every button  |
+| app:sbg_selectorTextColor 		| `color`		         | If selector on it, set text color for every button  |
+| app:sbg_selectorColor     | `color`               | Set selector color  |
+| app:sbg_dividerSize        | `dimension`               | Set divider size  |
+| app:sbg_dividerPadding    		| `dimension`           | Set divider padding for top and bottom  |
+| app:sbg_dividerColor			| `color`	         | Change divider color |
+| app:sbg_dividerRadius			| `dimension`	         | Round divider |
+| app:sbg_shadow			| `boolean`	         | Shadow for container layout (api21+) |
+| app:sbg_shadowElevation			| `dimension`	         | Shadow for container layout (api21+) |
+| app:sbg_shadowMargin			| `dimension`	         | Set margin to make shadow visible (api21+) |
+| app:sbg_position			| `integer`	         | Set selected button position |
+| app:sbg_radius			| `dimension`	         | Make layout rounder |
+| app:sbg_backgroundColor			| `color`	         | Set background color of container |
+| app:sbg_animateSelectorDuration			| `integer`	         | Set how long selector travels to selected position |
+| app:sbg_animateSelector			| `integer`	         | Set selector animation (ex. bounce animation) |
 
 #### Examples
 
