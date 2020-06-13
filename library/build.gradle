@@ -6,12 +6,13 @@ group = 'com.github.ceryle'
 android {
     compileSdkVersion 29
     buildToolsVersion '28.0.3'
+    enforceUniquePackageName = false
 
     defaultConfig {
-        minSdkVersion 11
+        minSdkVersion 12
         targetSdkVersion 29
-        versionCode 2
-        versionName "1.0.2"
+        versionCode 3
+        versionName "1.0.3"
     }
     buildTypes {
         release {
@@ -47,4 +48,5 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:25.3.1'
+
 }

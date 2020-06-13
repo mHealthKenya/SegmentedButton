@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SegmentedButton.iml" filepath="$PROJECT_DIR$/SegmentedButton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Segmented Button.iml" filepath="$PROJECT_DIR$/Segmented Button.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SegmentedButton.iml" filepath="$PROJECT_DIR$/SegmentedButton.iml" group="SegmentedButton" />
+      <module fileurl="file://$PROJECT_DIR$/app/SegmentedButton-app.iml" filepath="$PROJECT_DIR$/app/SegmentedButton-app.iml" group="SegmentedButton/app" />
       <module fileurl="file://$PROJECT_DIR$/library/SegmentedButton-library.iml" filepath="$PROJECT_DIR$/library/SegmentedButton-library.iml" group="SegmentedButton/library" />
-      <module fileurl="file://$PROJECT_DIR$/sample/SegmentedButton-sample.iml" filepath="$PROJECT_DIR$/sample/SegmentedButton-sample.iml" group="SegmentedButton/sample" />
-      <module fileurl="file://$PROJECT_DIR$/StudioProjects-SegmentedButton.iml" filepath="$PROJECT_DIR$/StudioProjects-SegmentedButton.iml" group="SegmentedButton" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
     </modules>
   </component>
 </project>
