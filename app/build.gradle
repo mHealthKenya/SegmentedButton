@@ -1,15 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.2"
+    compileSdkVersion 29
+    buildToolsVersion '28.0.3'
 
     defaultConfig {
         applicationId "co.ceryle.segmentedbutton"
         minSdkVersion 12
-        targetSdkVersion 24
-        versionCode 1
-        versionName "1.0"
+        targetSdkVersion 29
+        versionCode 3
+        versionName "3.0"
     }
     buildTypes {
         release {
